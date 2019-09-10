@@ -2,7 +2,7 @@ FROM claudioranaldi/tibrv:8.4.5
 
 MAINTAINER Mike Schippers <info@mikeschippers.com>
 
-ADD TIB_TRA_*.zip /tmp/install/
+ADD TIB_TRA_5.8.0_linux.zip /tmp/install/
 
 RUN unzip /tmp/install/TIB_TRA_*.zip -d /tmp/install/tibtra/ && \
 	sed -i 's/<entry key="environmentName">.*<\/entry>/<entry key="environmentName">DockerEnvironment<\/entry>/g' /tmp/install/tibtra/TIBCOUniversalInstaller_TRA_*.silent && \
