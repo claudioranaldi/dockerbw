@@ -1,7 +1,7 @@
 FROM claudioranaldi/tibrv:8.4.5
 
 MAINTAINER Mike Schippers <info@mikeschippers.com>
-USER root
+
 
 COPY TIB_TRA_linuxnozip  /tmp/install/tibtra
 
