@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TIBCOInstallerFeatures>
+    <productDef buildNumber="V16.9" buildType="release" id="tibcojava-oracle" name="32bit Oracle JRE" productType="contributor" targetPlatform="linux/x86" universalinstallerrelease="3.1.0" universalinstallerversion="V3" version="1.7.0.009"/>
+    
+    <installerFeature name="main" version="1.7.0.009" visible="false">
+        <assemblyList>
+            <assembly plat="win_x86,linux_x86,sol_sparc,sol_x86" targetPlatform="linux/x86" uid="product_tibco_tibcojava" version="1.7.0.009"/>
+        </assemblyList>
+   </installerFeature>
+
+    
+</TIBCOInstallerFeatures>
