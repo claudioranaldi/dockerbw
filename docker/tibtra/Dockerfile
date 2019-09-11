@@ -4,7 +4,9 @@ MAINTAINER Mike Schippers <info@mikeschippers.com>
 
 USER root
 
-ADD https://github.com/claudioranaldi/dockerbw/blob/master/docker/tibtra/TIB_TRA_linux.zip* /tmp/install/
+COPY TIB_TRA_*.zip /tmp/install/
+
+ADD https://github.com/claudioranaldi/dockerbw/blob/master/docker/tibtra/TIB_TRA_linux.zip /tmp/install/
 
 RUN mkdir -p /tmp/install/tibtra  && unzip /tmp/install/TIB_TRA_* -d /tmp/install/tibtra/ && \
 	sed -i 's/<entry key="environmentName">.*<\/entry>/<entry key="environmentName">DockerEnvironment<\/entry>/g' /tmp/install/tibtra/TIBCOUniversalInstaller_TRA_*.silent && \
