@@ -3,7 +3,7 @@ FROM claudioranaldi/tibrv:8.4.5
 MAINTAINER Mike Schippers <info@mikeschippers.com>
 USER root
 
-COPY TIB_TRA_linuxnozip  /tmp/install/
+ADD TIB_TRA_linuxnozip -d /tmp/install/
 
 RUN ls -la /tmp/install &&  mkdir -p /tmp/install/tibtra && \
 	sed -i 's/<entry key="environmentName">.*<\/entry>/<entry key="environmentName">DockerEnvironment<\/entry>/g' /tmp/install/tibtra/TIBCOUniversalInstaller_TRA_*.silent && \
